@@ -15,7 +15,7 @@ RUN dotnet restore ./source/Web/Architecture.Web.csproj
 COPY source ./source/
 
 # .NET Publish
-RUN dotnet publish ./source/Web/Architecture.Web.csproj -c Release -o /dist --no-restore
+RUN dotnet publish ./source/Web/Architecture.Web.csproj -c Release -o /dist --no-restore -k 4hwwrNe2UqOztMR3zZu7LzZfhCtKU
 
 # Angular
 FROM node:16-alpine AS angular
